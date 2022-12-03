@@ -30,11 +30,15 @@ keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
 -- Resize with arrows
 -- 調整分割視窗大小
-keymap("n", "<SC-Up>", ":resize +2<CR>", opts)
-keymap("n", "<SC-Down>", ":resize -2<CR>", opts)
-keymap("n", "<SC-Left>", ":vertical resize +2<CR>", opts)
-keymap("n", "<SC-Right>", ":vertical resize -2<CR>", opts)
+--keymap("n", "<SC-Up>", ":resize +2<CR>", opts)
+--keymap("n", "<SC-Down>", ":resize -2<CR>", opts)
+--keymap("n", "<SC-Left>", ":vertical resize +2<CR>", opts)
+--keymap("n", "<SC-Right>", ":vertical resize -2<CR>", opts)
 
+keymap("n", "<D-Up>", ":resize +2<CR>", opts)
+keymap("n", "<D-Down>", ":resize -2<CR>", opts)
+keymap("n", "<D-Left>", ":vertical resize +2<CR>", opts)
+keymap("n", "<D-Right>", ":vertical resize -2<CR>", opts)
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
