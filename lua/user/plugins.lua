@@ -73,7 +73,13 @@ return packer.startup(function(use)
   -- Telescope 尋找組件
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
-  
+
+  -- Treesitter 程式碼高亮
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+  use "p00f/nvim-ts-rainbow"
 
   --
   -- Automatically set up your configuration after cloning packer.nvim
