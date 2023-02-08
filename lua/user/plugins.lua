@@ -70,6 +70,11 @@ return packer.startup(function(use)
   use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
 
 
+  -- Telescope 尋找組件
+  use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope-media-files.nvim"
+  
+
   --
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
