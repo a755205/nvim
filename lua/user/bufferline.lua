@@ -6,7 +6,8 @@ end
 bufferline.setup {
   options = {
     mode = "buffers", -- set to "tabs" to only show tabpages instead
-    diagnostics = "nvim_lsp", -- false | "nvim_lsp" | "coc"
+    --[[ diagnostics = "nvim_lsp", -- false | "nvim_lsp" | "coc" ]]
+    diagnostics = false, -- false | "nvim_lsp" | "coc"
     separator_style = "slant",  --  "slant" | "thick" | "thin" | { 'any', 'any' },
     indicator = {
       icon = '▎', -- this should be omitted if indicator style is not 'icon'
