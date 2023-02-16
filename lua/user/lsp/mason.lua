@@ -1,8 +1,26 @@
 local servers = {
-	--[[ "sumneko_lua", ]]
-	"lua_ls",
-	"pyright",
-	"jsonls",
+--[[ https://github.com/williamboman/mason-lspconfig.nvim#available-lsp-servers ]]
+	"lua_ls",           -- lua
+	"pyright",          -- python
+	"jsonls",           -- json
+  "quick_lint_js",    -- javascript
+  "eslint",           -- eslint
+  "bashls",           -- bash
+  "clangd",           -- c
+  "cssls",            -- css
+  "dockerls",         -- docker
+  "glint",            -- go glint
+  "golangci_lint_ls", -- go
+  "gopls",            -- go
+  "html",             -- html
+  "intelephense",     -- php
+  "phpactor",         -- php
+  "psalm",            -- php
+  "volar",            -- vue
+  "vuels",            -- vue
+  "yamlls",           -- yaml
+  "remark_ls",        -- markdown
+  --[[ "sqls",            -- sql ]]
 }
 
 local settings = {

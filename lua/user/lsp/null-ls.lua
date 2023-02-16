@@ -11,9 +11,38 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup({
 	debug = false,
 	sources = {
-		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
+		--[[ *** formatting *** ]]
+		--[[ *** formatting *** ]]
+		--[[ *** formatting *** ]]
+		--
+		--[[ formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }), ]]
+		formatting.prettier,
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.stylua,
-    -- diagnostics.flake8
+		formatting.beautysh,
+		--[[ formatting.eslint, ]]
+		--[[ formatting.fixjson, ]]
+		formatting.gofmt,
+		--[[ formatting.lua_format, ]]
+		--[[ formatting.mdformat, ]]
+		formatting.nginx_beautifier,
+		--[[ formatting.perttier, ]]
+		--[[ formatting.perttier_eslint, ]]
+		formatting.sqlformat,
+		formatting.stylelint,
+		formatting.yamlfmt,
+
+		--[[ *** diagnostics *** ]]
+		--[[ *** diagnostics *** ]]
+		--[[ *** diagnostics *** ]]
+
+		--[[ diagnostics.golangci, ]]
+		diagnostics.golangci_lint,
+		--[[ diagnostics.jshint.with({}), ]]
+		diagnostics.jshint,
+		diagnostics.jsonlint,
+		diagnostics.php,
+		diagnostics.stylelint,
+		-- diagnostics.flake8
 	},
 })
