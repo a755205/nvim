@@ -10,7 +10,6 @@ local servers = {
   "cssls",            -- css
   "dockerls",         -- docker
   "glint",            -- go glint
-  "golangci_lint_ls", -- go
   "gopls",            -- go
   "html",             -- html
   "intelephense",     -- php
