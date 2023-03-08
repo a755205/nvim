@@ -74,6 +74,8 @@ return packer.startup(function(use)
   -- Telescope 尋找組件
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
+  --[[ use 'oberblastmeister/vim-open-ios-simulator-telescope' ]]
+  use "dimaportenko/telescope-simulators.nvim"
 
   -- Treesitter 程式碼高亮
   use {
@@ -99,6 +101,12 @@ return packer.startup(function(use)
 
   -- lualine
   use "nvim-lualine/lualine.nvim"
+
+  -- Toggleterm
+  use "akinsho/toggleterm.nvim"
+
+  -- Prettier
+  use { "prettier/vim-prettier", run = "npm install"}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

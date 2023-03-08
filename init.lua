@@ -1,3 +1,4 @@
+--/opt/homebrew/bin/prettier
 require "user.options"
 require "user.keymaps"
 require "user.plugins"
@@ -12,3 +13,11 @@ require "user.gitsigns"
 require "user.nvimtree"
 require "user.bufferline"
 require "user.lualine"
+require "user.toggleterm"
+require "user.prettier"
+
+
+--[[ package.path = package.path .. ';/opt/homebrew/lib/node_modules/?.lua;/opt/homebrew/lib/node_modules/?/init.lua' ]]
+
+--
+-- 设置 prettier 命令

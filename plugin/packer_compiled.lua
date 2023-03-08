@@ -214,10 +214,20 @@ _G.packer_plugins = {
     path = "/Users/chenghungyi/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim",
     url = "https://github.com/nvim-telescope/telescope-media-files.nvim"
   },
+  ["telescope-simulators.nvim"] = {
+    loaded = true,
+    path = "/Users/chenghungyi/.local/share/nvim/site/pack/packer/start/telescope-simulators.nvim",
+    url = "https://github.com/dimaportenko/telescope-simulators.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/chenghungyi/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/Users/chenghungyi/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["tokyonight.nvim"] = {
     loaded = true,
@@ -228,6 +238,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/chenghungyi/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-prettier"] = {
+    loaded = true,
+    path = "/Users/chenghungyi/.local/share/nvim/site/pack/packer/start/vim-prettier",
+    url = "https://github.com/prettier/vim-prettier"
   }
 }
 

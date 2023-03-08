@@ -66,7 +66,7 @@ nvim_tree.setup {
     },
     actions = {
         --[[ quit_on_open = true, ]]
-        window_picker = { enable = true },
+        --[[ window_picker = { enable = true }, ]]
     },
     renderer = {
         highlight_git = true,
