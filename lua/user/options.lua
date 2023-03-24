@@ -3,8 +3,6 @@
 opt = vim.opt
 cmd = vim.cmd
 
-opt.number = true -- 啟動行數
-opt.relativenumber = false -- 啟動相對行數
 opt.clipboard = "unnamedplus" -- 允許vim訪問系統剪貼簿
 opt.cmdheight = 2 -- 命令行高度 more space in the neovim command line for displaying messages
 opt.completeopt = { "menuone", "noselect" } -- 自動補全設定, mostly just for cmp
@@ -24,11 +22,11 @@ opt.swapfile = false -- creates a swapfile
 opt.termguicolors = true -- set term gui colors (most terminals support this)
 opt.timeoutlen = 1000 -- time to wait for a mapped sequence to complete (in milliseconds)
 opt.undofile = true -- enable persistent undo
-opt.updatetime = 300 -- faster completion (4000ms default)
+opt.updatetime = 100 -- faster completion (4000ms default)
 opt.writebackup = false -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 opt.expandtab = true -- convert tabs to spaces
-opt.shiftwidth = 2 -- the number of spaces inserted for each indentation
-opt.tabstop = 2 -- insert 2 spaces for a tab
+opt.shiftwidth = 4 -- the number of spaces inserted for each indentation
+opt.tabstop = 4 -- insert 2 spaces for a tab
 opt.cursorline = false -- 游標行線, highlight the current line
 opt.numberwidth = 4 -- set number column width to 2 {default 4}
 opt.signcolumn = "yes" -- always show the sign column, otherwise it would shift the text each time
@@ -39,6 +37,18 @@ opt.guifont = "monospace:h17" -- the font used in graphical neovim applications
 
 opt.shortmess:append("c")
 
+
+if opt.number:get() then
+  opt.cursorline = true
+  opt.number = false
+else
+  opt.number = true
+  opt.relativenumber = true
+end
+
+
+
 vim.cmd("set whichwrap+=<,>,[,],h,l")
+--vim.cmd([[set iskeyword+=-]])
 vim.cmd([[set iskeyword+=-]])
 vim.cmd([[set formatoptions-=cro]]) -- TODO: this doesn't seem to work

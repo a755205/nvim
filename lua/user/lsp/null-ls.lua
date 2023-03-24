@@ -71,7 +71,7 @@ null_ls.setup({
 		--[[ diagnostics.golangci, ]]
 		diagnostics.golangci_lint,
 		--[[ diagnostics.jshint.with({}), ]]
-		diagnostics.jshint,
+		--[[ diagnostics.jshint, ]]
 		diagnostics.jsonlint,
 		diagnostics.php,
 		diagnostics.stylelint,
