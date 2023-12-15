@@ -19,6 +19,7 @@ local servers = {
   "vuels",            -- vue
   "yamlls",           -- yaml
   "remark_ls",        -- markdown
+  "emmet_ls",        -- markdown
   --[[ "sqls",            -- sql ]]
 }
 
@@ -63,3 +64,9 @@ for _, server in pairs(servers) do
 
 	lspconfig[server].setup(opts)
 end
+
+--[[ setting emmet_ls for other filetypesg ]]
+lspconfig.emmet_ls.setup({
+  filetypes= { "hmtl", "php" },
+  cmd = { "emmet-ls", "--stdio" }
+})
